@@ -1,0 +1,30 @@
+if (fp == NULL)
+	return;
+
+
+while ((lectura = fgetc(fp)) != EOF) 
+{
+	//
+
+	bool bandera = true;
+
+		//signos de puntuacion 
+
+		if (puntuacion[i] == lectura)
+			bandera = false;
+
+	
+	if (contador < TAMTOKEN && bandera) {
+
+		// minusculas 
+
+		lectura = tolower(lectura);
+
+
+		for (i = 0; i < strlen(puntuacion); i++)
+
+		//
+
+		array[contador++] = lectura;
+		continue;
+	}
